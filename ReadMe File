@@ -1,4 +1,4 @@
-#  AI-Powered Color Detection App
+# AI-Powered Color Detection App
 
 This project is an interactive tool built using Python and OpenCV that detects the name of a color when a user selects a pixel in an image. It converts RGB values into LAB color space and finds the closest matching color from a dataset using perceptual color distance.
 
