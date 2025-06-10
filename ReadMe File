@@ -1,0 +1,73 @@
+#  AI-Powered Color Detection App
+
+This project is an interactive tool built using Python and OpenCV that detects the name of a color when a user selects a pixel in an image. It converts RGB values into LAB color space and finds the closest matching color from a dataset using perceptual color distance.
+
+---
+
+##  Features
+
+- Upload any image and select a pixel to detect its color
+- Converts RGB to LAB for perceptual color matching
+- Matches to the closest human-readable color name using a custom dataset
+- Works entirely in **Google Colab**
+- Lightweight, accurate, and easy to use
+
+---
+
+##  Project Structure
+├── color_detection.ipynb # Main Google Colab notebook
+├── colors.csv # Color dataset with RGB and color names
+├── sample_image.jpg # Sample image to test color detection
+├── README.md # This file
+
+---
+
+##  Dataset
+
+We used the **XKCD Color Survey Dataset** for color name mapping.  
+You can find it here:  
+🔗 https://github.com/meodai/color-names
+
+Each color entry includes:
+- Color name
+- RGB values
+- Optional HEX values
+
+---
+
+##  Algorithm Overview
+
+1. Load image and dataset
+2. Convert selected pixel's RGB values to LAB color space
+3. Compute the Euclidean distance between the pixel and each color in the dataset
+4. Return the color name with the shortest LAB distance
+
+---
+
+## 🛠 Tools & Technologies
+
+- Python 3.x  
+- OpenCV  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Google Colab
+
+---
+
+##  Future Improvements
+
+- Add Streamlit/Gradio interface for live demo
+- Enable real-time color detection using webcam
+- Support batch pixel detection
+- Add HEX and HSL output options
+
+---
+
+##  References
+
+- OpenCV Docs: https://docs.opencv.org/  
+- XKCD Color Dataset: https://github.com/meodai/color-names  
+- Matplotlib Docs: https://matplotlib.org/  
+- Pandas Docs: https://pandas.pydata.org/  
+
